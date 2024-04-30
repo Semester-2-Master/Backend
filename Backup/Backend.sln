@@ -1,8 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34601.136
-MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend", "Backend\Backend.csproj", "{A6DFDD61-34AF-4560-8E08-5F732ADEF469}"
 EndProject
 Global
@@ -15,11 +12,5 @@ Global
 		{A6DFDD61-34AF-4560-8E08-5F732ADEF469}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6DFDD61-34AF-4560-8E08-5F732ADEF469}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6DFDD61-34AF-4560-8E08-5F732ADEF469}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {15D222DC-D926-4747-BDE9-9CB9B106B403}
 	EndGlobalSection
 EndGlobal
