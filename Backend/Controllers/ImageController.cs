@@ -14,15 +14,26 @@ public class ImageController : ControllerBase
         _logger = logger;
     }
 
-    //[HttpGet(Name = "GetWeatherForecast")]
-    //public IEnumerable<WeatherForecast> Get()
-    //{
-    //    return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-    //        {
-    //            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-    //            TemperatureC = Random.Shared.Next(-20, 55),
-    //            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-    //        })
-    //        .ToArray();
-    //}
+    [HttpPost(Name = "Upload")]
+    public async Task<IActionResult> Get(IFormFile file)
+    {
+        if (file == null || file.Length == 0)
+            return BadRequest("No file uploaded.");
+        
+        string FilePath = "/Users/botond/Downloads/Pollen";
+
+        if (!Directory.Exists(FilePath))
+            Directory.CreateDirectory(FilePath);
+
+        // file.FileName
+        
+        var filePath = Path.Combine(FilePath, file.FileName);
+
+        await using (FileStream fs = System.IO.File.Create(filePath))
+        {
+            await file.CopyToAsync(fs);
+        }
+        
+        return Ok();
+    }
 }
