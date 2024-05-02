@@ -1,39 +1,68 @@
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Azure.Storage.Blobs;
+using System;
+using System.IO;
+using System.Threading.Tasks;
+using static System.Net.WebRequestMethods;
 
-namespace Backend.Controllers;
-
-[ApiController]
-[Route("[controller]")]
-public class ImageController : ControllerBase
+namespace Backend.Controllers
 {
-   
-    //private readonly ILogger<ImageController> _logger;
-
-    //public ImageController(ILogger<ImageController> logger)
-    //{
-    //    _logger = logger;
-    //}
-
-    [HttpPost(Name = "Upload")]
-    public async Task<IActionResult> Get(IFormFile file)
+    [ApiController]
+    [Route("[controller]")]
+    public class ImageController : ControllerBase
     {
-        if (file == null || file.Length == 0)
-            return BadRequest("No file uploaded.");
-        
-        string FilePath = "\\Users\\magnu\\Downloads\\Pollen";
+        private readonly IConfiguration _configuration;
 
-        if (!Directory.Exists(FilePath))
-            Directory.CreateDirectory(FilePath);
-
-        // file.FileName
-        
-        var filePath = Path.Combine(FilePath, file.FileName);
-
-        await using (FileStream fs = System.IO.File.Create(filePath))
+        public ImageController()
         {
-            await file.CopyToAsync(fs);
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                
+                .AddJsonFile("secrets.json", optional: true, reloadOnChange: true);
+
+            _configuration = builder.Build();
         }
-        
-        return Ok();
+
+        [HttpPost("Upload")]
+        public async Task<IActionResult> Upload(IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+                return BadRequest("No file uploaded.");
+
+            string connectionString = _configuration["AzureStorage:ConnectionString"];
+            string containerName = _configuration["AzureStorage:ContainerName"];
+
+            try
+            {
+                // Create BlobServiceClient using the configuration-based connection string
+                BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
+
+                // Get a reference to the Blob Container
+                BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(containerName);
+
+                // Generate a unique blob name
+                string blobName = file.FileName;
+
+                // Get a reference to the Blob
+                BlobClient blobClient = containerClient.GetBlobClient(blobName);
+
+                // Upload the file to Azure Blob Storage
+                using (var stream = file.OpenReadStream())
+                {
+                    await blobClient.UploadAsync(stream, true);
+                }
+
+                // Optionally, you can return the URL to the uploaded blob
+                string blobUrl = blobClient.Uri.AbsoluteUri;
+
+                return Ok(new { BlobUrl = blobUrl });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Failed to upload file: {ex.Message}");
+            }
+        }
     }
+
 }
