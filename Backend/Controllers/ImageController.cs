@@ -7,12 +7,12 @@ namespace Backend.Controllers;
 public class ImageController : ControllerBase
 {
    
-    private readonly ILogger<ImageController> _logger;
+    //private readonly ILogger<ImageController> _logger;
 
-    public ImageController(ILogger<ImageController> logger)
-    {
-        _logger = logger;
-    }
+    //public ImageController(ILogger<ImageController> logger)
+    //{
+    //    _logger = logger;
+    //}
 
     [HttpPost(Name = "Upload")]
     public async Task<IActionResult> Get(IFormFile file)
@@ -20,7 +20,7 @@ public class ImageController : ControllerBase
         if (file == null || file.Length == 0)
             return BadRequest("No file uploaded.");
         
-        string FilePath = "/Users/botond/Downloads/Pollen";
+        string FilePath = "\\Users\\magnu\\Downloads\\Pollen";
 
         if (!Directory.Exists(FilePath))
             Directory.CreateDirectory(FilePath);
