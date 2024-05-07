@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|c:\\users\\magnu\\documents\\github\\backend\\backend\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|c:\\users\\magnu\\documents\\github\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|c:\\users\\magnu\\documents\\github\\backend\\backend\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|solutionrelative:backend\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|c:\\users\\magnu\\documents\\github\\backend\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|solutionrelative:backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|c:\\users\\magnu\\documents\\github\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -23,8 +15,16 @@
       "RelativeMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|solutionrelative:backend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|c:\\users\\magnu\\documents\\github\\backend\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|solutionrelative:backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|c:\\users\\magnu\\documents\\github\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|c:\\users\\magnu\\documents\\github\\backend\\backend\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|c:\\users\\magnu\\documents\\github\\backend\\backend\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|solutionrelative:backend\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6DFDD61-34AF-4560-8E08-5F732ADEF469}|Backend\\Backend.csproj|c:\\users\\magnu\\documents\\github\\backend\\backend\\dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -38,20 +38,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\secrets.json",
               "RelativeDocumentMoniker": "Backend\\secrets.json",
-              "ToolTip": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\secrets.json*",
-              "RelativeToolTip": "Backend\\secrets.json*",
+              "ToolTip": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\secrets.json",
+              "RelativeToolTip": "Backend\\secrets.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-02T13:20:04.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-02T13:20:04.839Z"
             },
             {
               "$type": "Document",
@@ -63,12 +62,11 @@
               "RelativeToolTip": "Backend\\Dockerfile",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-30T12:37:42.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T12:37:42.781Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Backend\\appsettings.Development.json",
@@ -81,12 +79,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\appsettings.json",
               "RelativeDocumentMoniker": "Backend\\appsettings.json",
-              "ToolTip": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\appsettings.json*",
-              "RelativeToolTip": "Backend\\appsettings.json*",
+              "ToolTip": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\appsettings.json",
+              "RelativeToolTip": "Backend\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-30T12:37:37.158Z",
@@ -94,39 +92,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Backend\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\Properties\\launchSettings.json",
               "RelativeToolTip": "Backend\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-30T12:37:07.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ImageController.cs",
               "DocumentMoniker": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\Controllers\\ImageController.cs",
               "RelativeDocumentMoniker": "Backend\\Controllers\\ImageController.cs",
-              "ToolTip": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\Controllers\\ImageController.cs*",
-              "RelativeToolTip": "Backend\\Controllers\\ImageController.cs*",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAAQAAAA",
+              "ToolTip": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\Controllers\\ImageController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\ImageController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA6wD8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T11:11:00.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Backend\\Program.cs",
               "ToolTip": "C:\\Users\\magnu\\Documents\\GitHub\\Backend\\Backend\\Program.cs",
               "RelativeToolTip": "Backend\\Program.cs",
-              "ViewState": "AQIAAAYAAAAANDMzMzPrvxgAAAAKAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAswBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T11:10:27.392Z",
               "EditorCaption": ""
