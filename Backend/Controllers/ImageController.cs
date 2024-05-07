@@ -24,6 +24,12 @@ namespace Backend.Controllers
             _configuration = builder.Build();
         }
 
+        [HttpGet]
+        public IActionResult Image()
+        {
+            return Ok(new { Endpoint = "Image" });
+        }
+
         [HttpPost("Upload")]
         public async Task<IActionResult> Upload(IFormFile file)
         {
