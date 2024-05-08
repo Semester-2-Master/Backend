@@ -23,7 +23,11 @@ namespace Backend.Controllers
 
             _configuration = builder.Build();
         }
-
+        [HttpGet]
+        public IActionResult Test()
+        {
+            return Ok(new { Endpoint = "test" });
+        }
         [HttpGet]
         public IActionResult Image()
         {
@@ -70,14 +74,6 @@ namespace Backend.Controllers
             }
         }
 
-        [HttpPost("Test")]
-        public async Task<IActionResult> Test()
-        {
-            
-
-                return Ok("test");
-            
-        }
     }
 
 }
