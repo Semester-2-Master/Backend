@@ -40,8 +40,8 @@ namespace Backend.Controllers
             if (file == null || file.Length == 0)
                 return BadRequest("No file uploaded.");
 
-            string connectionString = _configuration["AzureStorage:ConnectionString"];
-            string containerName = _configuration["AzureStorage:ContainerName"];
+            string connectionString = Environment.GetEnvironmentVariable("AZURESTORAGE_CONNECTION_STRING");
+            string containerName = Environment.GetEnvironmentVariable("AZURESTORAGE_CONTAINER_NAME");
 
             try
             {
