@@ -26,7 +26,7 @@ namespace Backend.Controllers
         [HttpGet("Test")]
         public IActionResult Test()
         {
-            return Ok(new { Endpoint = "test" });
+            return Ok(new { Endpoint = Environment.GetEnvironmentVariable("AZURESTORAGE_CONTAINER_NAME")});
         }
         [HttpGet]
         public IActionResult Image()
