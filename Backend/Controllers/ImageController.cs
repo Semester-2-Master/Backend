@@ -66,7 +66,7 @@ namespace Backend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Failed to upload file: {ex.Message} {connectionString}");
+                return StatusCode(500, $"Failed to upload file: {ex.Message} Connect{connectionString}");
             }
         }
     }
