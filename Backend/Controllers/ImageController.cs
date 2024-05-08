@@ -69,6 +69,15 @@ namespace Backend.Controllers
                 return StatusCode(500, $"Failed to upload file: {ex.Message} Connect{connectionString}");
             }
         }
+
+        [HttpPost("Test")]
+        public async Task<IActionResult> Test()
+        {
+            
+
+                return Ok("test");
+            
+        }
     }
 
 }
