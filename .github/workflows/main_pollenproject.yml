@@ -27,6 +27,7 @@ jobs:
             ${{ env.IMAGE_TAG }}:${{ github.sha }}
             ${{ env.IMAGE_TAG }}:latest
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Deploy Stage
