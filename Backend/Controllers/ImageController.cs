@@ -23,7 +23,7 @@ namespace Backend.Controllers
 
             _configuration = builder.Build();
         }
-        [HttpGet]
+        [HttpGet("Test")]
         public IActionResult Test()
         {
             return Ok(new { Endpoint = "test" });
