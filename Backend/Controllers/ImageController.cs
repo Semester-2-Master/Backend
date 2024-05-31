@@ -17,46 +17,9 @@ namespace Backend.Controllers
         public ImageController()
         {
             var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                
-                .AddJsonFile("secrets.json", optional: true, reloadOnChange: true);
+                .SetBasePath(Directory.GetCurrentDirectory());
 
             _configuration = builder.Build();
-        }
-        [HttpPost("Test")]
-        public IActionResult Test([FromBody] TestRequest request)
-        {
-            if (request == null)
-            {
-                return BadRequest("Request body is null");
-            }
-
-            // Process the request data
-            // For example, let's echo back the received message
-            string message = request.Message;
-            string responseMessage = "Received message: " + message;
-
-            return Ok(new TestResponse
-            {
-                ResponseMessage = responseMessage,
-                Timestamp = DateTime.UtcNow
-            });
-        }
-
-        public class TestRequest
-        {
-            public string Message { get; set; }
-        }
-
-        public class TestResponse
-        {
-            public string ResponseMessage { get; set; }
-            public DateTime Timestamp { get; set; }
-        }
-        [HttpGet]
-        public IActionResult Image()
-        {
-            return Ok(new { Endpoint = "Image" });
         }
 
         [HttpPost("Upload")]
